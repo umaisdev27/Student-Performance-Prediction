@@ -7,3 +7,13 @@ Student_Performance_Prediction.egg-info/dependency_links.txt
 Student_Performance_Prediction.egg-info/requires.txt
 Student_Performance_Prediction.egg-info/top_level.txt
 src/__init__.py
+src/exception.py
+src/logger.py
+src/utils.py
+src/cpmponents/__init__.py
+src/cpmponents/data_ingestion.py
+src/cpmponents/data_transformaion.py
+src/cpmponents/model_trainer.py
+src/pipeline/__init__.py
+src/pipeline/predict_pipeline.py
+src/pipeline/train_pipeline.py
