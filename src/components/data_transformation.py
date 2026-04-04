@@ -46,7 +46,7 @@ class DataTransformation:
                 steps=[
                     ("Imputer",SimpleImputer(strategy='most_frequent')),
                     ('OneHotEncoder',OneHotEncoder()),
-                    ("StandardScaler",StandardScaler())
+                    ("StandardScaler",StandardScaler(with_mean=False))
                 ]
             )
 
@@ -66,10 +66,10 @@ class DataTransformation:
             raise ExceptionHandling(e,sys)  
         
 
-    def initiate_data_transformation(self, train_path, test_path):
+    def initiate_data_transformation(self, train_data_path, test_data_path):
         try:
-            train_df = pd.read_csv(train_path)
-            test_df = pd.read_csv(test_path)
+            train_df = pd.read_csv(train_data_path)
+            test_df = pd.read_csv(test_data_path)
 
             logging.info("Complete Reading the Train and Test Data")
 
@@ -92,14 +92,14 @@ class DataTransformation:
                     'Train DataFrame and Test DataFrame')
 
             input_feature_train_arr = preprocessing_obj.fit_transform(input_feature_train_df)
-            input_feature_test_arr= preprocessing_obj.fit(input_feature_test_df)
+            input_feature_test_arr= preprocessing_obj.transform(input_feature_test_df)
 
             train_arr = np.c_[
-                input_feature_train_arr, np.array(input_feature_train_df)
+                input_feature_train_arr, np.array(target_feature_train_df)
             ]
 
             test_arr = np.c_[
-                input_feature_test_arr, np.array(input_feature_test_df)
+                input_feature_test_arr, np.array(target_feature_test_df)
             ]
 
             save_object(
