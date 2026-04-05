@@ -12,6 +12,9 @@ from dataclasses import dataclass
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
 
+from src.components.model_trainer import ModelTrainConfig
+from src.components.model_trainer import ModelTrain
+
 # where i want to save the train,test and raw data are basically created in this class
 @dataclass
 class DataIngestionConfig:
@@ -55,5 +58,8 @@ if __name__ == "__main__":
 
     #now we will call DataTransformation
     data_transformation = DataTransformation()
-    data_transformation.initiate_data_transformation(train_data,test_data)
+    train_arr,test_arr, preprocessor_path = data_transformation.initiate_data_transformation(train_data,test_data)
+
+    modeltrainer = ModelTrain()
+    print(modeltrainer.initiate_model_training(train_arr,test_arr))
 
