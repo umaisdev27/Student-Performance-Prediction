@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 
 from src.exception import ExceptionHandling
+from sklearn.metrics import r2_score
 
 def save_object(file_path,obj):
     try:
@@ -29,14 +30,11 @@ def evaluate_models(x_train,y_train,x_test, y_test,models):
         report = {}
 
         for model_name, model in models.items(): #items provides both keys and values 
-            model = list(models.values())[i]
-
             model.fit(x_train,y_train)
 
             y_pred_train = model.predict(x_train)
             y_pred_test = model.predict(x_test)
 
-            r2_score_train = r2_score(y_test,y_pred_train)
             r2_score_test = r2_score(y_test,y_pred_test)
 
             report[model_name] = r2_score_test
