@@ -12,7 +12,6 @@ from sklearn.ensemble import RandomForestRegressor,AdaBoostRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.linear_model import LinearRegression,Ridge,Lasso
-from sklearn.model_selection import RandomizedSearchCV
 from sklearn.svm import SVR
 from sklearn.metrics import r2_score
 
