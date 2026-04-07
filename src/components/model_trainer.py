@@ -39,22 +39,34 @@ class ModelTrain:
             )
 
             #Hyperparameter Tuning Results (ran GridSearchcV -  See hyper_param_tune.ipynb)
-            
             models = {
-                'random_forest': RandomForestRegressor(),
-                'Xg-Boost': XGBRegressor(),
-                'Cat-Boost': CatBoostRegressor(),
-                'Lasso': Lasso(),
-                'Ridge': Ridge(),
-                'svm': SVR(),
+                'random_forest': RandomForestRegressor(max_depth =  15,
+                                        max_features =  'log2',
+                                        min_samples_split =  5,
+                                        n_estimators =  300),
+
+                'Xg-Boost': XGBRegressor(learning_rate = 0.05, max_depth = 3,
+                                          n_estimators = 100, subsample = 0.8),
+                                          
+                'Cat-Boost': CatBoostRegressor( depth =4, iterations = 100,
+                                                learning_rate = 0.05),
+
+                'Lasso': Lasso( alpha = 0.01),
+                'Ridge': Ridge(alpha = 1.0),
+                'svm': SVR(C = 1, epsilon =  0.5, kernel = 'linear'),
+
                 'Decision-tree': DecisionTreeRegressor(criterion= 'poisson',
-                            max_features= 'log2',
-                            min_samples_split = 5,
-                            splitter =  'random'),
-                            
-                'KNeighborsRegressor': KNeighborsRegressor(),
+                                        max_features= 'log2',
+                                        min_samples_split = 5,
+                                        splitter =  'random'),
+
+                'KNeighborsRegressor': KNeighborsRegressor(metric = 'minkowski', n_neighbors = 9,
+                                                            weights =  'distance'),
+
                 'Linear-Regressor': LinearRegression(),
-                'AdaBoostRegressor': AdaBoostRegressor(),
+
+                'AdaBoostRegressor': AdaBoostRegressor(learning_rate = 0.1, loss = 'square',
+                                                        n_estimators = 300),
             }
 
             model_report:dict=evaluate_models(x_train=x_train,x_test=x_test,
