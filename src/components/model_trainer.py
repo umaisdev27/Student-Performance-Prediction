@@ -38,6 +38,8 @@ class ModelTrain:
                 test_arr[:,-1]
             )
 
+            #Hyperparameter Tuning Results (ran GridSearchcV -  See hyper_param_tune.ipynb)
+            
             models = {
                 'random_forest': RandomForestRegressor(),
                 'Xg-Boost': XGBRegressor(),
@@ -45,7 +47,11 @@ class ModelTrain:
                 'Lasso': Lasso(),
                 'Ridge': Ridge(),
                 'svm': SVR(),
-                'Decision-tree': DecisionTreeRegressor(),
+                'Decision-tree': DecisionTreeRegressor(criterion= 'poisson',
+                            max_features= 'log2',
+                            min_samples_split = 5,
+                            splitter =  'random'),
+                            
                 'KNeighborsRegressor': KNeighborsRegressor(),
                 'Linear-Regressor': LinearRegression(),
                 'AdaBoostRegressor': AdaBoostRegressor(),
