@@ -16,17 +16,18 @@ def predict_datapoint():
     if request.method == 'GET':
         return render_template('home.html') #home.html will have the simple input fields that will require for prediction
     else:
+        print(request.form)
         data = CustomData(
             gender = request.form.get('gender'),
             lunch = request.form.get('lunch'),
             race_ethnicity = request.form.get('race_ethnicity'),
             parental_level_of_education = request.form.get('parental_level_of_education'),
-            test_preparation_score = request.form.get('test_preparation_score'),
+            test_preparation_course = request.form.get('test_preparation_course'),
             reading_score = int(request.form.get('reading_score')),   
             writing_score = int(request.form.get('writing_score'))    
         )
 
-        pred_df = data.get_data_as_DataFrame(data)
+        pred_df = data.get_data_as_DataFrame()
 
         predict_pipeline = PredictPipeline()
         results = predict_pipeline.predict(pred_df)
