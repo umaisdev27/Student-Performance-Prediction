@@ -1,0 +1,7 @@
+[ 2026-04-10 01:58:14,372 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-10 01:58:14,377 ] 97 werkzeug - INFO -  * Debugger PIN: 791-917-647
+[ 2026-04-10 01:58:20,728 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:58:20] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2026-04-10 01:58:20,914 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:58:20] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-04-10 01:58:20,916 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:58:20] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-04-10 01:58:21,059 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:58:21] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=R50bvq1jA3uu32BbG5W4 HTTP/1.1" 200 -
+[ 2026-04-10 02:00:54,396 ] 97 werkzeug - INFO -  * Detected change in '/run/media/abdullah/drive/programs/ML/Student-Performance-Prediction/src/pipeline/predict_pipeline.py', reloading

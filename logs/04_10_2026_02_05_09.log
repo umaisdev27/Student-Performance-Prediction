@@ -1,0 +1,7 @@
+[ 2026-04-10 02:05:09,657 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-10 02:05:09,662 ] 97 werkzeug - INFO -  * Debugger PIN: 791-917-647
+[ 2026-04-10 02:05:19,280 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 02:05:19] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2026-04-10 02:05:19,464 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 02:05:19] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-04-10 02:05:19,468 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 02:05:19] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-04-10 02:05:19,517 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 02:05:19] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=3BfQfFURuY7iuQS45LUH HTTP/1.1" 200 -
+[ 2026-04-10 02:05:38,239 ] 97 werkzeug - INFO -  * Detected change in '/run/media/abdullah/drive/programs/ML/Student-Performance-Prediction/app.py', reloading

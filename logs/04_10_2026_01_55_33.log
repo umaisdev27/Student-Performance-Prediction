@@ -1,0 +1,20 @@
+[ 2026-04-10 01:55:33,791 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+[ 2026-04-10 01:55:33,791 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2026-04-10 01:55:33,819 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 01:57:55,565 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 01:58:07,551 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 01:58:12,430 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:00:54,768 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:00:58,531 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:02:40,568 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:02:46,283 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:02:51,520 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:05:07,370 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:05:38,726 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:05:45,020 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:06:36,490 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:08:03,358 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)
+[ 2026-04-10 02:08:12,967 ] 97 werkzeug - INFO -  * Restarting with watchdog (inotify)

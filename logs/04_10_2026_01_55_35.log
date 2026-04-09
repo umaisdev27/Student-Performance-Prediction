@@ -1,0 +1,11 @@
+[ 2026-04-10 01:55:35,563 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-10 01:55:35,575 ] 97 werkzeug - INFO -  * Debugger PIN: 791-917-647
+[ 2026-04-10 01:56:08,418 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:56:08] "GET / HTTP/1.1" 200 -
+[ 2026-04-10 01:56:08,640 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:56:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-04-10 01:56:40,993 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:56:40] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-04-10 01:57:08,186 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:57:08] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2026-04-10 01:57:08,306 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:57:08] "GET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2026-04-10 01:57:08,307 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:57:08] "GET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2026-04-10 01:57:08,371 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:57:08] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=NcURSurDNWgXBko4NzBS HTTP/1.1" 200 -
+[ 2026-04-10 01:57:08,384 ] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2026 01:57:08] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2026-04-10 01:57:55,204 ] 97 werkzeug - INFO -  * Detected change in '/run/media/abdullah/drive/programs/ML/Student-Performance-Prediction/src/pipeline/predict_pipeline.py', reloading
