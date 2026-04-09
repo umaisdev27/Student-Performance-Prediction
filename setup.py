@@ -24,7 +24,7 @@ setup(
     name='Student-Performance-Prediction',
     version='0.0.1',
     author='umaisdev27',
-    author_email='umaisdev@gmail.com',
+    author_email='umaismldev@gmail.com',
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt')
 )
