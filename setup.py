@@ -12,7 +12,7 @@ def get_requirements(file_path:str)->List[str]:
         requirements=file_obj.readlines()
         requirements=[req.replace('\n',"") for req in requirements]
 
-        #to remove the -e . while reading the file
+        #to remove the -e . while reading the fileA
         if '-e .' in requirements:
             requirements.remove('-e .')
 
@@ -23,7 +23,7 @@ def get_requirements(file_path:str)->List[str]:
 setup(
     name='Student-Performance-Prediction',
     version='0.0.1',
-    author='umaisdev27',
+    author='umais07',
     author_email='umaismldev@gmail.com',
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt')
